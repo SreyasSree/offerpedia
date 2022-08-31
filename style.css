@@ -5,11 +5,11 @@
 body{
     background-color: #E8ECEA;
 }
-.qsb input:hover{
-    border: none;
-}
 a{
     text-decoration: none;
+}
+input{
+    border: none;
 }
 h2{
     padding: 15px 0;
@@ -128,7 +128,6 @@ h2{
 }
 .qsb input{
     width: 100%;
-    border: none;
     padding: 10px;
     background: url(./images/Search\ Icon.png) no-repeat scroll 7px ;
     padding-left:30px;
@@ -182,12 +181,98 @@ h2{
 }
 .chart{
     margin: 30px 75px;
-    
     height: 635px;
     background-color: white;
     border-radius: 15px;
     align-items: center;
 }
+
+
+
+.anywhere {
+    display: flex;
+    background-color: white;
+    width: fit-content;
+    padding: 5px 15px;
+    border-radius: 10px;
+    gap: 10px;
+}
+.anywhere img{
+    width: 100%;
+}
+.keyword {
+    display: flex;
+    gap: 20px;
+}
+.keyword input{
+    border-radius: 10px;
+    width: 50%;
+    padding: 5px;
+    background: url(./images/Search\ Icon.png) no-repeat scroll 7px;
+    padding-left: 30px;
+    background-color: white;
+}
+.vpa{
+    display: flex;
+}
+.plus{
+    display: flex;
+    margin: 15px auto;
+    background-color: #60C2A2;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: white;
+    gap: 15px;
+}
+.ttca{
+    display: flex;
+    padding-top: 30px;
+    gap: 20px;
+}
+.cross{
+    display: flex;
+    background-color: white;
+    padding: 5px 15px;
+    border-radius: 15px;
+    gap: 10px;
+}
+.vdks a{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px auto;
+    color: black;
+}
+.vdksone{
+    display: flex;
+    gap: 10px;
+}
+.vdkstwo img{
+    width: 100%;
+}
+.vdksthree span{
+    color: #999999;
+}
+.vdksfour{
+    display: flex;
+    padding: 10px 0;
+    gap: 5px;
+}
+.vdksfive{
+    background-color: #DAF1E9;
+    color: #60C2A2;
+    padding: 2px 5px;
+    border-radius: 10px;
+    font-size: small;
+    width: fit-content;
+}
+
+
+
+
+
 @media screen and (max-width:1330px){
     .three{
         grid-column: span 2;
@@ -210,5 +295,10 @@ h2{
     }
     .qsb{
         padding-right: 0;
+    }
+}
+@media screen and (max-width:600px){
+    .vdksfour{
+        flex-direction: column;
     }
 }
