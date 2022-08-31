@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #E8ECEA;
+}
+.qsb input:hover{
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+h2{
+    padding: 15px 0;
+}
+.login{
+    margin: 10% auto;
+    width: 400px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+}
+.login h4{
+    color: #c5cfca;
+    padding: 20px;
+}
+.logo{
+    padding: 20px;
+}
+.up{
+    padding: 20px;
+}
+.up input{
+    width: 80%;
+    padding: 10px;
+}
+.lprf{
+    padding: 20px 0;
+}
+.lpr{
+    padding-left: 10%;
+    text-align: left;
+}
+.lpf{
+    padding-left: 10%;
+    text-align: right;
+}
+.lpls{
+    display: flex;
+    gap: 20%;
+    padding: 35px;
+}
+.ls button{
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+}
+.ls{
+    width: 40%;
+}
+.lpl button{
+    background-color: #60C2A2;
+    color: white;
+}
+.lps button{
+    background-color: white;
+    color: #60C2A2;
+}
+
+
+.mono{
+    display: flex;
+}
+.menu{
+    background-color: white;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: space-between;
+}
+.op img{
+    width: 100%;
+}
+.op{
+    width: 170px;
+    padding: 20px 0;
+}
+
+.options{
+    padding: 15px;
+}
+.options a{
+    color: black;
+    display: flex;
+}
+.options img{
+    padding-right: 20px;
+}
+.lo a{
+    display: flex;
+    justify-content: center;
+}
+.page{
+    background-color: #60C2A2;
+    border-radius: 10px;
+}
+.page a{
+    color: white;
+}
+.db{
+    width: 80%;
+}
+.sb{
+    background-color: white;
+    display: flex;
+    
+}
+.qsb{
+    padding: 5px;
+    padding-right: 50%;
+}
+.menuicon{
+    padding: 15px;
+    display: none;
+}
+.qsb input{
+    width: 100%;
+    border: none;
+    padding: 10px;
+    background: url(./images/Search\ Icon.png) no-repeat scroll 7px ;
+    padding-left:30px;
+}
+.bell{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+.carlos{
+    display: flex;
+}
+.one{
+    padding: 50px;
+}
+.two{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.three{
+    background-color: white;
+    padding: 10px;
+    border-radius: 15px;
+    width: fit-content;
+    margin: auto;
+}
+.three p{
+    color: #43425D;
+    padding-bottom: 15px;
+}
+.three h3{
+    padding-bottom: 10px;
+}
+.four{
+    display: flex;
+}
+.five {
+    display: flex;
+}
+.five p{
+    color: #FF4141;
+    padding: 0;
+}
+.six img{
+    width: 100%;
+}
+.six{
+    width: 135px;
+    padding-left: 20px;
+}
+.chart{
+    margin: 30px 75px;
+    
+    height: 635px;
+    background-color: white;
+    border-radius: 15px;
+    align-items: center;
+}
+@media screen and (max-width:1330px){
+    .three{
+        grid-column: span 2;
+    }
+}
+@media screen and (max-width:850px){
+    .menu{
+        display: none;
+    }
+    .db{
+        width: 100%;
+    }
+    .menuicon{
+        display: block;
+    }
+}
+@media screen and (max-width:560px){
+    .three{
+        grid-column: span 4;
+    }
+    .qsb{
+        padding-right: 0;
+    }
+}
