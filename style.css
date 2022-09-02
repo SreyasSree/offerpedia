@@ -189,6 +189,8 @@ h2{
 
 
 
+
+
 .anywhere {
     display: flex;
     background-color: white;
@@ -196,31 +198,37 @@ h2{
     padding: 5px 15px;
     border-radius: 10px;
     gap: 10px;
+    grid-column: span 1;
 }
 .anywhere img{
     width: 100%;
 }
 .keyword {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 .keyword input{
     border-radius: 10px;
-    width: 50%;
+    width: 90%;
     padding: 5px;
     background: url(./images/Search\ Icon.png) no-repeat scroll 7px;
     padding-left: 30px;
     background-color: white;
+    grid-column: span 2;
 }
 .vpa{
     display: flex;
 }
 .plus{
-    display: flex;
-    margin: 15px auto;
+    margin: 15px ;
     background-color: #60C2A2;
     border-radius: 20px;
-    padding: 10px 15px;
+    padding: 7px 15px;
+    width: fit-content;
+}
+.plus a{
+    display: flex;
     color: white;
     gap: 15px;
 }
@@ -239,21 +247,31 @@ h2{
 .vdks a{
     background-color: white;
     display: flex;
-    justify-content: space-between;
     border-radius: 10px;
     padding: 10px;
     margin: 20px auto;
     color: black;
+    gap: 10px;
 }
 .vdksone{
     display: flex;
     gap: 10px;
+    justify-content: space-between;
+    width: 100%;
 }
 .vdkstwo img{
     width: 100%;
 }
+.vdkstwo{
+    width: 80px;
+    margin: 0 auto;
+}
 .vdksthree span{
     color: #999999;
+}
+.bubble{
+    display: flex;
+    gap: 5px;
 }
 .vdksfour{
     display: flex;
@@ -268,6 +286,150 @@ h2{
     font-size: small;
     width: fit-content;
 }
+.days{
+    padding: 30px 0;
+}
+
+
+
+
+
+.mcdonald{
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    border-radius: 10px;
+}
+.mcimage img{
+    width: 100%;
+}
+.mcimage{
+    width: 175px;
+    margin: 0 auto;
+}
+.llc{
+    display: flex;
+    justify-content: space-between;
+}
+.edit{
+    background-color: #60C2A2;
+    width: fit-content;
+    padding: 5px 15px;
+    margin: 10px 0;
+    height: fit-content;
+    border-radius: 15px;
+}
+.edit a{
+    color: white;
+}
+.adapt span{
+    font-size: small;
+}
+.adapt{
+    color: #999999;
+    padding-right: 10px;
+}
+.campaign{
+    display: flex;
+    padding-top: 20px;
+}
+.group{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+.spice{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.spice button{
+    border: none;
+    width: 25px;
+}
+.spice button img{
+    width: 100%;
+}
+.burgurimage img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+.first{
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    color: #4D4F5C;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 30px;
+}
+.first input{
+    padding: 15px;
+    width: 90%;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #EFEFEF;
+}
+.second{
+    grid-column: span 2;
+}
+
+.third input{
+    background: url(./images/Drop\ down.png)  no-repeat scroll 7px ;
+    padding-left: 20px;
+    background-color: #EFEFEF;
+}
+.addimage p{
+    font-size: small;
+    color: #808080;
+    padding-bottom: 10px;
+}
+.addimage input{
+    background: url(./images/Add.png) no-repeat scroll;
+    background-color: #EFEFEF;
+    
+    height: 100px;
+    
+}
+.adddes textarea{
+    border: none;
+    width: 90%;
+    padding: 15px;
+    line-height: 140%;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #EFEFEF;
+}
+.addnumber{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+}
+#photo{
+    display: none;
+}
+.adding{
+    background-color: #EFEFEF;
+    height: 130px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addnumber input{
+    width: 80%;
+}
+
+
+
+
 
 
 
@@ -275,6 +437,9 @@ h2{
 
 @media screen and (max-width:1330px){
     .three{
+        grid-column: span 2;
+    }
+    .burgur{
         grid-column: span 2;
     }
 }
@@ -288,6 +453,15 @@ h2{
     .menuicon{
         display: block;
     }
+    .anywhere{
+        grid-column: span 2;
+    }
+    .keyword input{
+        grid-column: span 4;
+    }
+    .mcdonald{
+        flex-direction: column;
+    }
 }
 @media screen and (max-width:560px){
     .three{
@@ -296,9 +470,22 @@ h2{
     .qsb{
         padding-right: 0;
     }
+    .burgur{
+        grid-column: span 4;
+    }
 }
 @media screen and (max-width:600px){
     .vdksfour{
         flex-direction: column;
+    }
+}
+@media screen and (max-width:640px){
+    .vdks a{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:1000px){
+    .second{
+        grid-column: span 6;
     }
 }
