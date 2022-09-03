@@ -557,3 +557,8 @@ h2{
         grid-column: span 6;
     }
 }
+@media screen and (max-width:460px){
+    .qsb{
+        width: 100px;
+    }
+}
