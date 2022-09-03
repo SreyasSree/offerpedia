@@ -536,6 +536,7 @@ h2{
     }
     .qsb{
         padding-right: 0;
+        width: 200px;
     }
     .burgur{
         grid-column: span 4;
