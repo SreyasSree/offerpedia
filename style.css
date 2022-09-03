@@ -74,6 +74,15 @@ h2{
 
 
 
+
+#close{
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+#close i{
+    font-size: 50px;
+}
 .flex{
     display: flex;
     justify-content: space-between;
@@ -82,11 +91,12 @@ h2{
     width: 100%;
 }
 .mono{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
 }
 .menu{
     background-color: white;
-    width: 20%;
+    grid-column: span 1;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -127,7 +137,7 @@ h2{
     color: white;
 }
 .db{
-    width: 80%;
+    grid-column: span 4;
 }
 .sb{
     background-color: white;
@@ -488,10 +498,21 @@ h2{
 }
 @media screen and (max-width:850px){
     .menu{
-        display: none;
+        width: 0;
+        overflow-x: hidden;
+        padding: 0;
+        transition: 0.5s;
+        z-index: 1;
+        background-color:  grey;
+        position: absolute;
+        height: 100%;
+    }
+    #close{
+        display: flex;
+        justify-content: center;
     }
     .db{
-        width: 100%;
+        grid-column: span 5;
     }
     .menuicon{
         display: block;
