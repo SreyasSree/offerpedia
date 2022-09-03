@@ -76,8 +76,6 @@ h2{
 
 
 #close{
-    display: flex;
-    justify-content: center;
     display: none;
 }
 #close i{
@@ -488,7 +486,7 @@ h2{
 
 
 
-@media screen and (max-width:1330px){
+@media screen and (max-width:1000px){
     .three{
         grid-column: span 2;
     }
