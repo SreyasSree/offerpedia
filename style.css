@@ -71,6 +71,16 @@ h2{
 }
 
 
+
+
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+.searchbar{
+    width: 100%;
+}
 .mono{
     display: flex;
 }
@@ -141,13 +151,13 @@ h2{
 .bell{
     display: flex;
     align-items: center;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 .carlos{
     display: flex;
 }
 .carlos input{
-    width: 100%;
+    width: 90px;
     padding: 10px;
     background: url(./images/Drop\ down.png) no-repeat scroll 7px ;
     padding-left:30px;
@@ -217,6 +227,9 @@ h2{
 }
 .anywhere img{
     width: 100%;
+}
+.anywhere input{
+    width: 80px;
 }
 #place{
     background: url(./images/Drop\ down.png) no-repeat scroll 7px;
@@ -491,6 +504,9 @@ h2{
     }
     .mcdonald{
         flex-direction: column;
+    }
+    #search{
+        grid-column: span 4;
     }
 }
 @media screen and (max-width:560px){
