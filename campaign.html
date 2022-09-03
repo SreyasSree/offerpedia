@@ -7,6 +7,11 @@
     <title>Add Campaign</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/ddd466807d.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800&family=Open+Sans:ital,wght@0,300;0,500;0,600;1,600&family=Roboto+Flex:opsz,wght@8..144,400;8..144,600;8..144,700;8..144,900&display=swap" rel="stylesheet"> 
+
 </head>
 <body>
     <section class="mono">
@@ -17,13 +22,13 @@
                     <img src="./images/logo 1.png" alt="">
                 </div>
                 <div class="options">                    
-                    <a href="">
+                    <a href="./index.html">
                         <img src="./images/chart-bar.png" alt="">
                         <p>Dashboard</p>
                     </a>
                 </div>
                 <div class="options page">
-                    <a href="">
+                    <a href="./vendors.html">
                         <img src="./images/Union.png" alt="">
                         <p>Vendors</p>
                     </a>
@@ -63,14 +68,14 @@
                     <input type="text" placeholder="Quick Search">
                 </div>
                 <div class="bell">
+                    <div class="carlos">
+                        <input list="jenkins" value="Carlos Jenkins">
+                        <datalist id="jenkins">
+                            <option value="Carlos Jenkins"></option>
+                        </datalist>
+                    </div>
                     <div class="bellimg">
                         <img src="./images/Notification.png" alt="">
-                    </div>
-                    <div class="carlos">
-                        <p>Carlos Jenkins</p>
-                        <div class="carlosimg">
-                            <img src="./images/Drop down.png" alt="">
-                        </div>
                     </div>
                 </div>
             </div>
@@ -80,7 +85,7 @@
                     <div class="second">
                         <p>Choose your campaign type</p>
                         <div class="third">
-                            <input list="details">
+                            <input list="details" value="Bubble Campaign">
                             <datalist id="details">
                                 <option value="Bubble Campaign "></option>
                                 <option value="Coupon Campaign "></option>
@@ -93,7 +98,7 @@
                                     <img src="./images/Add.png" alt="">
                                 </div>
                             </label>
-                            <input id="photo" type="file">
+                            <input id="photo" type="file"  accept="image/png, image/gif, image/jpeg">
                             <p>Aspect ratio:- 4:3 <br> Maximum size:- 4MB</p>
                         </div>
                         <div class="addname">
@@ -107,7 +112,7 @@
                         <div class="addnumber">
                             <div class="addmrp">
                                 <p>MRP</p>
-                                <input type="text">
+                                <input type="number">
                             </div>
                             <div class="addoffer">
                                 <p>Offer(%)</p>
@@ -116,7 +121,7 @@
                         </div>
                     </div>
                     <div class="second">
-                        <p>Choose your campaign type</p>
+                        <p>Maximum claims</p>
                         <div class="four">
                             <input type="number">
                         </div>
@@ -126,7 +131,7 @@
                                     <img src="./images/Add.png" alt="">
                                 </div>
                             </label>
-                            <input id="photo" type="file">
+                            <input id="photo" type="file"  accept="image/png, image/gif, image/jpeg">
                             <p>Aspect ratio:- 4:3 <br> Maximum size:- 4MB</p>
                         </div>
                         <div class="addname">
@@ -140,7 +145,7 @@
                         <div class="addnumber">
                             <div class="addmrp">
                                 <p>MRP</p>
-                                <input type="text">
+                                <input type="number">
                             </div>
                             <div class="addoffer">
                                 <p>Offer(%)</p>
@@ -149,7 +154,7 @@
                         </div>
                     </div>
                     <div class="second">
-                        <p>Choose your campaign type</p>
+                        <p>Expires on</p>
                         <div class="third">
                             <input type="date">
                         </div>
@@ -159,7 +164,7 @@
                                     <img src="./images/Add.png" alt="">
                                 </div>
                             </label>
-                            <input id="photo" type="file">
+                            <input id="photo" type="file"  accept="image/png, image/gif, image/jpeg">
                             <p>Aspect ratio:- 4:3 <br> Maximum size:- 4MB</p>
                         </div>
                         <div class="addname">
@@ -173,7 +178,7 @@
                         <div class="addnumber">
                             <div class="addmrp">
                                 <p>MRP</p>
-                                <input type="text">
+                                <input type="number">
                             </div>
                             <div class="addoffer">
                                 <p>Offer(%)</p>

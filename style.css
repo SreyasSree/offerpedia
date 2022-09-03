@@ -4,6 +4,8 @@
 }
 body{
     background-color: #E8ECEA;
+    font-family: 'Noto Sans', sans-serif;
+
 }
 a{
     text-decoration: none;
@@ -36,7 +38,7 @@ h2{
     padding: 10px;
 }
 .lprf{
-    padding: 20px 0;
+    padding: 10px 0;
 }
 .lpr{
     padding-left: 10%;
@@ -76,9 +78,8 @@ h2{
     background-color: white;
     width: 20%;
     padding: 10px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 .op img{
@@ -98,6 +99,11 @@ h2{
 }
 .options img{
     padding-right: 20px;
+    height: 100%;
+    padding-top: 1px;
+}
+.lo{
+    padding-bottom: 30px;
 }
 .lo a{
     display: flex;
@@ -140,6 +146,12 @@ h2{
 .carlos{
     display: flex;
 }
+.carlos input{
+    width: 100%;
+    padding: 10px;
+    background: url(./images/Drop\ down.png) no-repeat scroll 7px ;
+    padding-left:30px;
+}
 .one{
     padding: 50px;
 }
@@ -181,10 +193,13 @@ h2{
 }
 .chart{
     margin: 30px 75px;
-    height: 635px;
+    height: 550px;
     background-color: white;
     border-radius: 15px;
     align-items: center;
+}
+.clear{
+    padding: 5px;
 }
 
 
@@ -203,12 +218,21 @@ h2{
 .anywhere img{
     width: 100%;
 }
+#place{
+    background: url(./images/Drop\ down.png) no-repeat scroll 7px;
+    padding-left: 30px;
+}
+#filtering{
+    background: url(./images/Filter\ Icon.png)no-repeat scroll 7px;
+    padding-left: 30px;
+}
+
 .keyword {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
-.keyword input{
+#search{
     border-radius: 10px;
     width: 90%;
     padding: 5px;
@@ -232,6 +256,9 @@ h2{
     color: white;
     gap: 15px;
 }
+.plus i{
+    padding-top: 3px;
+}
 .ttca{
     display: flex;
     padding-top: 30px;
@@ -240,9 +267,12 @@ h2{
 .cross{
     display: flex;
     background-color: white;
-    padding: 5px 15px;
+    padding: 5px 8px;
     border-radius: 15px;
     gap: 10px;
+}
+.cross img{
+    height: 100%;
 }
 .vdks a{
     background-color: white;
@@ -383,20 +413,13 @@ h2{
 
 .third input{
     background: url(./images/Drop\ down.png)  no-repeat scroll 7px ;
-    padding-left: 20px;
+    padding-left: 25px;
     background-color: #EFEFEF;
 }
 .addimage p{
     font-size: small;
     color: #808080;
     padding-bottom: 10px;
-}
-.addimage input{
-    background: url(./images/Add.png) no-repeat scroll;
-    background-color: #EFEFEF;
-    
-    height: 100px;
-    
 }
 .adddes textarea{
     border: none;

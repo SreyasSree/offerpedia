@@ -7,6 +7,11 @@
     <title>vendors</title>
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/ddd466807d.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;800&family=Open+Sans:ital,wght@0,300;0,500;0,600;1,600&family=Roboto+Flex:opsz,wght@8..144,400;8..144,600;8..144,700;8..144,900&display=swap" rel="stylesheet"> 
+
 </head>
 <body>
     <section class="mono">
@@ -17,13 +22,13 @@
                     <img src="./images/logo 1.png" alt="">
                 </div>
                 <div class="options">                    
-                    <a href="">
+                    <a href="./index.html">
                         <img src="./images/chart-bar.png" alt="">
                         <p>Dashboard</p>
                     </a>
                 </div>
                 <div class="options page">
-                    <a href="">
+                    <a href="#">
                         <img src="./images/Union.png" alt="">
                         <p>Vendors</p>
                     </a>
@@ -63,14 +68,14 @@
                     <input type="text" placeholder="Quick Search">
                 </div>
                 <div class="bell">
+                    <div class="carlos">
+                        <input list="jenkins" value="Carlos Jenkins">
+                        <datalist id="jenkins">
+                            <option value="Carlos Jenkins"></option>
+                        </datalist>
+                    </div>
                     <div class="bellimg">
                         <img src="./images/Notification.png" alt="">
-                    </div>
-                    <div class="carlos">
-                        <p>Carlos Jenkins</p>
-                        <div class="carlosimg">
-                            <img src="./images/Drop down.png" alt="">
-                        </div>
                     </div>
                 </div>
             </div>
@@ -86,16 +91,18 @@
                         </div>
                     </div>
                     <div class="keyword">
-                        <input type="text" placeholder="Search by company name, keywords">
+                        <input id="search" type="text" placeholder="Search by company name, keywords">
                         <div class="anywhere">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <p>Anywhere</p>
-                            <img src="./images/Drop down.png" alt="">
+                            <input id="place" list="locations"  placeholder="Locations">
+                            <datalist id="locations">
+                                <option value="Kerala"></option>
+                            </datalist>
                         </div>
                         <div class="anywhere">
-                            <img src="./images/Filter Icon.png" alt="">
-                            <p>Filters</p>
-                            <img src="./images/Group 4464.png" alt="">
+                            <input id="filtering" list="filters" placeholder="Filters">
+                            <datalist id="filters">
+                                <option value="filter"></option>
+                            </datalist>
                         </div>
                     </div>
                     <div class="ttca">
@@ -107,13 +114,13 @@
                             <img src="./images/Cancel.png" alt="">
                             <p> Tag</p>
                         </div>
-                        <div>
-                            <p>Clear All</p>
+                        <div class="clear">
+                            <input type="reset" value="Clear All">
                         </div>
                     </div>
                     <div>
                         <div class="vdks">
-                            <a href="">
+                            <a href="./vendorsub.html">
                                 <div class="vdkstwo">
                                     <img src="./images/Rectangle 1.png" alt="">
                                 </div>
@@ -141,7 +148,7 @@
                             </a>
                         </div>
                         <div class="vdks">
-                            <a href="">
+                            <a href="./vendorsub.html">
                                 <div class="vdkstwo">
                                     <img src="./images/Rectangle 1(1).png" alt="">
                                 </div>
@@ -169,7 +176,7 @@
                             </a>
                         </div>
                         <div class="vdks">
-                            <a href="">
+                            <a href="./vendorsub.html">
                                 <div class="vdkstwo">
                                     <img src="./images/Rectangle 1(2).png" alt="">
                                 </div>
@@ -197,7 +204,7 @@
                             </a>
                         </div>
                         <div class="vdks">
-                            <a href="">
+                            <a href="./vendorsub.html">
                                 <div class="vdkstwo">
                                     <img src="./images/Rectangle 1(3).png" alt="">
                                 </div>
